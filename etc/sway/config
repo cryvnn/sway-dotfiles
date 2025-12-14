@@ -1,0 +1,152 @@
+# Sway Configuration File
+# Mod
+set $mod Mod4
+
+# Defaults
+set $term alacritty
+set $browser google-chrome-stable
+
+# Font
+font pango:Iosevka Term 6
+
+# Outputs (You can check using command swaymsg -t get_outputs)
+output eDP-1 mode 1920x1080@60Hz scale 1
+output DP-1 mode 1920x1080@100Hz scale 1
+
+output * bg ~/dotfiles/wallpapers/wallpapers-forest.jpg fill
+output * allow_tearing yes
+
+output * max_render_time off
+
+# Inputs (Check swaymsg -t get_inputs)
+input "2:14:SynPS/2_Synaptics_TouchPad" {
+     dwt enabled
+     tap enabled
+     natural_scroll enabled
+     middle_emulation enabled
+}
+
+# Bindings
+    # Exec
+    bindsym $mod+Return exec $term
+    bindsym $mod+b exec $browser
+    bindsym $mod+r exec rofi -show drun
+    bindsym $mod+l exec swaylock
+    bindsym $mod+q kill
+
+    # Floating
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+r reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+# Moving around
+    # Move your focus around
+    bindsym $mod+left focus left
+    bindsym $mod+down focus down
+    bindsym $mod+up focus up
+    bindsym $mod+right focus right
+
+    # Ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+
+# Workspaces
+    # Switch to workspace
+    bindsym $mod+1 workspace number 1
+    bindsym $mod+2 workspace number 2
+    bindsym $mod+3 workspace number 3
+    bindsym $mod+4 workspace number 4
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace number 1
+    bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+3 move container to workspace number 3
+    bindsym $mod+Shift+4 move container to workspace number 4
+    bindsym $mod+Shift+5 move container to workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10
+
+# Layout stuff:
+    # Switch the current container between different layout styles
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    bindsym $mod+f fullscreen
+    bindsym $mod+space floating toggle
+    bindsym $mod+Shift+space focus mode_toggle
+
+    # Move focus to the parent container
+    bindsym $mod+a focus parent
+
+# Utilities
+    # Audio
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ 100%
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -1%
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +1%
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    # Brightness
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 10%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 10%+
+    # Screenshot
+    bindsym Print exec grim
+
+# Language & Input
+input * {
+    repeat_delay 200       
+    repeat_rate 50         
+    xkb_layout "us, ru"
+    xkb_options "grp:alt_shift_toggle"
+}
+
+# Focus colors
+client.focused #9b8d7f #9b8d7f #000000 #9b8d7f #9b8d7f
+client.focused_inactive #202020 #202020 #9b8d7f #202020 #202020
+client.unfocused #202020 #202020 #9b8d7f #202020 #202020
+
+# Waybar
+bar {
+    swaybar_command waybar
+    status_command while date +'%Y-%m-%d :: %X'; do sleep 1; done
+
+position bottom
+separator_symbol "::"
+  colors {
+    background #222222
+    statusline #9b8d7f
+    separator #9b8d7f
+
+    focused_workspace #9b8d7f #9b8d7f #222222
+    inactive_workspace #222222 #222222 #9b8d7f
+    active_workspace #222222 #222222 #9b8d7f
+    urgent_workspace #222222 #222222 #9b8d7f
+    binding_mode #222222 #222222 #9b8d7f
+  }
+  font pango:Caskaydia Mono Nerd Font 15
+  tray_output DP-1
+}
+
+# Workspace
+workspace 5 gaps horizontal 100
+workspace 5 gaps vertical 30
+workspace 5 gaps inner 20
+
+# Border
+default_border pixel 2
+default_floating_border pixel 2
+
+#Include
+include /etc/sway/config.d/*
