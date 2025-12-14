@@ -19,7 +19,7 @@ List of software and utils I use.
 | Editor          | [neovim](https://github.com/neovim/neovim) |
 | Launcher        | [rofi](https://github.com/davatorium/rofi)          |
 | Visualiser      | [cava](https://github.com/karlstav/cava)          |
-| CLI-utils       | [cowsay](), [figlet](), [colorscripts](https://github.com/stark/Color-Scripts), [tomato.c]() |
+| CLI-utils       | [cowsay](https://github.com/sckott/cowsay), [figlet](https://github.com/cmatsuoka/figlet), [colorscripts](https://github.com/stark/Color-Scripts), [tomato.c](https://github.com/gabrielzschmitz/Tomato.C) |
 
 ## Credits
 
