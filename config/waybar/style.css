@@ -1,0 +1,42 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "CaskaydiaMono Nerd Font";
+  font-size: 16px;
+  padding: 0;
+}
+
+window#waybar {
+  background: #202020;
+  color: #9b8d7f;
+}
+
+tooltip {
+  background-color: #202020;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+
+#workspaces button {
+  color: #9b8d7f;
+}
+
+#workspaces button.focused {
+  background-color: #9b8d7f;
+  color: #202020;
+}
+
+#workspaces button.active {
+  background-color: #202020;
+  color: #9b8d7f;
+}
+
+#battery, #tray, #clock, #cpu, #pulseaudio, #memory {
+  color: #9b8d7f;
+}
