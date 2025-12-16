@@ -1,4 +1,5 @@
 # Sway Configuration File
+
 # Mod
 set $mod Mod4
 
@@ -7,15 +8,15 @@ set $term alacritty
 set $browser google-chrome-stable
 
 # Font
-font pango:Iosevka Term 6
+font pango:CaskaydiaMono Nerd Font 6
 
 # Outputs (You can check using command swaymsg -t get_outputs)
-output eDP-1 mode 1920x1080@60Hz scale 1
-output DP-1 mode 1920x1080@100Hz scale 1
+output eDP-1 mode 1920x1080@60Hz pos 0 0 scale 1
+output DP-1 mode 3440x1440@100Hz pos 760 1440 scale 1
 
+# Background
 output * bg ~/dotfiles/wallpapers/wallpapers-forest.jpg fill
 output * allow_tearing yes
-
 output * max_render_time off
 
 # Inputs (Check swaymsg -t get_inputs)
@@ -41,7 +42,7 @@ input "2:14:SynPS/2_Synaptics_TouchPad" {
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+q exec swaynag -t warning -m 'Exit shortcut. You sure?' -B 'Yes' 'swaymsg exit'
 
 # Moving around
     # Move your focus around
@@ -92,6 +93,12 @@ input "2:14:SynPS/2_Synaptics_TouchPad" {
     # Move focus to the parent container
     bindsym $mod+a focus parent
 
+    # Resize 
+    bindsym Ctrl+up resize shrink height 50px
+    bindsym Ctrl+down resize grow height 50px
+    bindsym Ctrl+left resize shrink width 50px
+    bindsym Ctrl+right resize grow width 50 px
+
 # Utilities
     # Audio
     bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ 100%
@@ -117,26 +124,9 @@ client.focused #9b8d7f #9b8d7f #000000 #9b8d7f #9b8d7f
 client.focused_inactive #202020 #202020 #9b8d7f #202020 #202020
 client.unfocused #202020 #202020 #9b8d7f #202020 #202020
 
-# Waybar
+# Top bar
 bar {
     swaybar_command waybar
-    status_command while date +'%Y-%m-%d :: %X'; do sleep 1; done
-
-position bottom
-separator_symbol "::"
-  colors {
-    background #222222
-    statusline #9b8d7f
-    separator #9b8d7f
-
-    focused_workspace #9b8d7f #9b8d7f #222222
-    inactive_workspace #222222 #222222 #9b8d7f
-    active_workspace #222222 #222222 #9b8d7f
-    urgent_workspace #222222 #222222 #9b8d7f
-    binding_mode #222222 #222222 #9b8d7f
-  }
-  font pango:Caskaydia Mono Nerd Font 15
-  tray_output DP-1
 }
 
 # Workspace
