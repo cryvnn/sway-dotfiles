@@ -42,7 +42,7 @@
   "network": {
     "format-wifi": "󰖩  ",
     "format-disconnected": "󰖪  ",
-    "on-click": "zsh ~/.config/rofi/rofi-wifi-menu.sh",
+    "on-click": "zsh ~/.config/rofi/wifi.sh",
     "interval": 5,
     "tooltip": false
   },
