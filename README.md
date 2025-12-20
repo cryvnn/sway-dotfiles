@@ -2,27 +2,7 @@
 
 My small config files for arch using sway.
 
-## Installation
-
-Clone repository
-
-```bash
-git clone https://github.com/cryvnn/sway-dotfiles.git
-```
-
-Put files into .config folder 
-
-```bash
-mkdir -p ~/.config/sway
-cp -r sway-dotfiles/config/* ~/.config/
-cp -r sway-dotfiles/etc/sway/* ~/.config/sway/
-```
-
-Alternatively, copy it directly to the system /etc/sway/ folder
-
-```bash
-sudo cp -r sway-dotfiles/etc/sway/* /etc/sway/
-```
+![Preview](./screenshots/preview.png)
 
 ## Utils & Packages
 
