@@ -14,7 +14,7 @@
     "sway/mode"
   ],
   "modules-right": [
-    "tray",
+    // "tray",
     "pulseaudio",
     "custom/separator",
     "battery",
