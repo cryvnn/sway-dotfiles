@@ -2,28 +2,23 @@
 
 My small config files for arch using sway.
 
-### Installation
+## Installation
 
-Let's begin by cloning the repository:
+Clone repository
 
 ```bash
 git clone https://github.com/cryvnn/sway-dotfiles.git
 ```
 
-Next, copy the general config folder to your user .config/ directory:
-
-```bash
-cp -r sway-dotfiles/config/* ~/.config/
-```
-
-Then, copy the Sway-specific configuration. You can either place it in your user directory:
+Put files into .config folder 
 
 ```bash
 mkdir -p ~/.config/sway
+cp -r sway-dotfiles/config/* ~/.config/
 cp -r sway-dotfiles/etc/sway/* ~/.config/sway/
 ```
 
-Alternatively, copy it directly to the system-wide /etc/sway/ folder:
+Alternatively, copy it directly to the system /etc/sway/ folder
 
 ```bash
 sudo cp -r sway-dotfiles/etc/sway/* /etc/sway/
@@ -41,7 +36,7 @@ List of software and utils I use.
 | Terminal        | [alacritty](https://github.com/alacritty/alacritty)        |
 | Audio           | [pulseaudio](https://github.com/pulseaudio/pulseaudio) + [pavucontrol](https://github.com/pulseaudio/pavucontrol) + [sof-firmware](https://github.com/thesofproject/sof)      |
 | Notifications   | [swaync](https://github.com/ErikReider/SwayNotificationCenter) |
-| Fetch           | [neofetch](https://github.com/dylanaraps/neofetch) + [catnip](https://github.com/iinsertNameHere/catnip) |
+| Fetch           | [neofetch](https://github.com/dylanaraps/neofetch) + [catnap](https://github.com/iinsertNameHere/catnip) |
 | Resource Monitor| [gotop](https://github.com/cjbassi/gotop) |
 | Editor          | [neovim](https://github.com/neovim/neovim) |
 | Launcher        | [rofi](https://github.com/davatorium/rofi)          |
