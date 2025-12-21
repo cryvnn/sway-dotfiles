@@ -1,0 +1,31 @@
+* {
+  all: unset;
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 12;
+}
+
+.notification {
+  background-color: #202020;
+  border: 1px solid #9b8d7f;
+  border-radius: 0;
+  padding: 8px;
+}
+
+.notification-icon {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+}
+
+.notification-title {
+  color: #9b8d7f;
+  margin-bottom: 4px;
+}
+
+.notificayion-body {
+  color: #d0d0d0;
+}
+
+.notification-progress {
+  background-color: #9d8b7f;
+}

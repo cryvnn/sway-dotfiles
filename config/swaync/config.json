@@ -1,0 +1,13 @@
+{
+  "layer": "overlay",
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-width": 0,
+  "control-center-height": 0,
+  "notification-window-width": 360, 
+  "notification-icon-size": 0,
+  "timeout": 5,
+  "widgets": [],
+  "fit-to-screen": true,
+  "keyboard-shortcuts": false
+}
