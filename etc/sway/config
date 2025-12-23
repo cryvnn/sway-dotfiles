@@ -1,5 +1,8 @@
 # Sway Configuration File
 
+#Autostart
+exec --no-startup-id swaync
+
 # Mod
 set $mod Mod4
 
