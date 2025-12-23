@@ -26,5 +26,4 @@ List of software and utils I use.
 ## Credits
 
 - **Arch-i3-cfg (vimichael)** - Used his colorscheme for sway, waybar and rofi, from here: [Arch-i3-cfg](https://github.com/vimichael/arch-i3-cfg).
-- **My-Nvim-Config (vimichael)** - Inspiration and plugins for Neovim from here: [My-Nvim-Config](https://github.com/vimichael/my-nvim-config).
 - **rofi-wifi-menu (ericmurphyxyz)** - Rofi WiFi menu script from here: [rofi-wifi-menu](https://github.com/ericmurphyxyz/rofi-wifi-menu).
