@@ -10,7 +10,7 @@ List of software and utils I use.
 
 | Component         | Program    |
 |-------------------|------------|
-| Windows Manager | [sway](https://github.com/hyprwm/Hyprland)  |
+| Windows Manager | [sway](https://github.com/swaywm/sway) + [swayfx](https://github.com/WillPower3309/swayfx) |
 | Bar             | [waybar](https://github.com/Alexays/Waybar)      |
 | Shell           | [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) + [starship](https://github.com/starship/starship) |
 | Terminal        | [alacritty](https://github.com/alacritty/alacritty)        |
