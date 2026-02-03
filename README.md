@@ -2,7 +2,7 @@
 
 My small config files for arch using sway.
 
-![Preview](./image/preview.png)
+![Preview](./images/preview.png)
 
 ## Utils & Packages
 
