@@ -1,10 +1,25 @@
-# Personal dotfiles (Sway + Arch)
+<div align="center">
+  
+  # Sway Dotfiles
 
-My small config files for arch using sway.
+  ![Sway](https://img.shields.io/badge/Sway-6A9FBF?style=for-the-badge&logo=sway&logoColor=white)
+  ![Arch Linux](https://img.shields.io/badge/Arch_Linux-7DBFCF?style=for-the-badge&logo=arch-linux&logoColor=white)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-E8A85A?style=for-the-badge)
+  ![Commits](https://img.shields.io/github/commit-activity/t/cryvnn/sway-dotfiles?style=for-the-badge&color=E8849A&label=Commits)
 
-![Preview](./images/preview.png)
+</div>
 
-## Utils & Packages
+![Preview](./images/preview.jpeg)
+
+## Description
+
+A personal [Sway](https://swaywm.org/) window manager dotfiles, tailored for daily use on Arch Linux. The configuration is built around a Wayland-native stack with a focus on minimalism and keyboard-driven workflow. Since this is built specifically for my setup, some components may require adjustments to work on other systems or distributions.
+
+Minimalism and simplicity can be seen in details such as the absence of icons everywhere, emphasizing text, as well as file management tailored for terminal work (using [Yazi](https://github.com/sxyazi/yazi)), which is why I didn't use Dolphin or anything similar to make the experience more nerdy ☝️🤓.
+
+This repository is also planned to be updated in the future.
+
+## Utils
 
 List of software and utils I use.
 
@@ -25,5 +40,5 @@ List of software and utils I use.
 
 ## Credits
 
-- **Arch-i3-cfg (vimichael)** - Used his colorscheme for sway, waybar and rofi, from here: [Arch-i3-cfg](https://github.com/vimichael/arch-i3-cfg).
-- **rofi-wifi-menu (ericmurphyxyz)** - Rofi WiFi menu script from here: [rofi-wifi-menu](https://github.com/ericmurphyxyz/rofi-wifi-menu).
+- [Vimichael](https://github.com/vimichael/arch-i3-cfg) used his colorscheme for sway, waybar and rofi.
+- [Ericmurphyxyz](https://github.com/ericmurphyxyz/rofi-wifi-menu) used his WiFi menu script for Rofi.
