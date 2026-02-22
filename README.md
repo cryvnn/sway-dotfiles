@@ -2,9 +2,9 @@
   
   # Sway Dotfiles
 
-  ![Sway](https://img.shields.io/badge/Sway-6A9FBF?style=for-the-badge&logo=sway&logoColor=white)
-  ![Arch Linux](https://img.shields.io/badge/Arch_Linux-7DBFCF?style=for-the-badge&logo=arch-linux&logoColor=white)
-  ![License: MIT](https://img.shields.io/badge/License-MIT-E8A85A?style=for-the-badge)
+  [![Sway](https://img.shields.io/badge/Sway-6A9FBF?style=for-the-badge&logo=sway&logoColor=white)](https://swaywm.org/)
+  [![Arch Linux](https://img.shields.io/badge/Arch_Linux-7DBFCF?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-E8A85A?style=for-the-badge)](https://mit-license.org/)
   ![Commits](https://img.shields.io/github/commit-activity/t/cryvnn/sway-dotfiles?style=for-the-badge&color=E8849A&label=Commits)
 
 </div>
