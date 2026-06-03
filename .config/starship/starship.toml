@@ -2,6 +2,8 @@ add_newline = false
 command_timeout = 1000
 
 format = """
+$username\
+$hostname\
 $directory\
 $git_branch\
 $git_state\
@@ -9,9 +11,23 @@ $git_status\
 $line_break\
 $character"""
 
+[username]
+format = "[$user]($style)"
+style_user = "white"
+style_root = "white"
+
+show_always = true
+
+[hostname]
+format = "@[$hostname ]($style)"
+style = "white"
+
+ssh_only = false
+disabled = false
+
 [character]
-success_symbol = "[󰘧](white)"
-error_symbol = "[󰘧](red)"
+success_symbol = "[->](white)"
+error_symbol = "[->](red)"
 
 [directory]
 read_only = " "
